@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-us</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="top-navbar">
+      <div class="logo">
+        <img src="./images/logo.png" />
+        <h1>JETCYCLE</h1>
+      </div>
+
+      <ul class="menu-list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="cycles.html">Our cycles</a></li>
+        <li><a href="contact_us.html">Contact Us</a></li>
+        <li><a href="#">Login</a></li>
+        <li>
+          <a href="#"><span class="active">Call Now:</span> +91 8578013008</a>
+        </li>
+        <ion-icon name="cart" class="active icons"></ion-icon>
+      </ul>
+    </div>
+
+    <section
+      class="reg-form"
+      style="
+        background: url(./images/contact-1.jpg);
+        background-size: cover;
+        background-position: cover;
+      "
+    >
+      <div class="skew-form-bg">
+        <div class="form-content">
+          <div class="form-heading">GET IN TOUCH</div>
+          <form method="post">
+            <input type="text" id="name" placeholder="Full Name" required />
+            <div class="one-line-form">
+              <input type="email" id="email" placeholder="Email" required />
+              <input
+                type="text"
+                id="phone"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+            <input type="message" id="message" placeholder="Message" />
+            <input type="submit" value="send" id="button" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot-content">
+        <div class="foot-cnt-box">
+          <div class="logo">
+            <img src="./images/logo.png" />
+            <h1>JETCYCLE</h1>
+          </div>
+
+          <p class="foot-para">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour, or
+          </p>
+        </div>
+        <div class="foot-cnt-box">
+          <p class="address-p">ADDRESS</p>
+          <p class="para4">
+            passages of Lorem Ipsum available, but the majority have
+          </p>
+          <p>(+91) 8578013008</p>
+          <p>hr746399@gmail.com</p>
+          <div class="footer-icon">
+            <img src="./images/facebook-logo-button.png" />
+            <img src="./images/twitter-logo-button.png" />
+            <img src="./images/linkedin.png" />
+            <img src="./images/instagram.png" />
+          </div>
+        </div>
+        <div class="foot-cnt-box">
+          <p class="menu-li">MENU</p>
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Our cycles</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <div class="copy-right">
+      © 2024 All Rights Reserved By 😍Hrithik Roshan💕❤️
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      let btn = document.getElementById("button");
+
+      btn.addEventListener("click", (e) => {
+        e.preventDefault();
+
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
+        let message = document.getElementById("message").value;
+
+        Email.send({
+          SecureToken: "74fe4605-784b-4628-81c5-c06896a3c54f",
+          To: "hr746399@gmail.com",
+          From: email,
+          Subject: "New Contact Message Received",
+          Body: "name: " +
+          name +
+          "<br/> email: " +
+          email +
+          "<br/> phone: " +
+          phone +
+          "<br/> message: " +
+          message,
+        }).then((message) => alert(message));
+      });
+    </script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

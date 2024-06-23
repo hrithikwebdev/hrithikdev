@@ -1,0 +1,110 @@
+.center-div-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.blank {
+  height: 10vh;
+}
+.about-us-2 {
+  min-height: 100vh;
+  padding: 0 10%;
+  color: #ffff;
+  margin-top: 10%;
+}
+
+.about-us-2 .about-img {
+  width: 63%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.about-img-2 img {
+  width: 73%;
+  object-fit: cover;
+  border: 1px solid #c4495374;
+}
+
+.rectangle {
+  width: 83%;
+  height: 110%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #c4495374;
+}
+
+.about-us-2 .content-text { 
+  width: 55%;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bars {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 4rem;
+  color: #fff;
+}
+.container-pr {
+  width: 40%;
+  background-color: #2a2a2a;
+}
+
+.text {
+  color: #fff;
+}
+.progress-bar {
+  height: 3px;
+  background-color: #c44953;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.progress-bar p {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.face {
+  width: 90%;
+}
+.wedding {
+  width: 80%;
+}
+.eyebro {
+  width: 75%;
+}
+.hair {
+  width: 85%;
+}
+
+
+
+@media (max-width: 768px) {
+  .about-us-2 {
+    min-height: 100vh;
+  }
+
+  .about-us-2 .content-text {
+    width: 100%;
+    text-align: justify;
+    box-sizing: border-box;
+  }
+
+  .container-pr {
+    width: 80%;
+    background-color: #2a2a2a;
+  }
+}

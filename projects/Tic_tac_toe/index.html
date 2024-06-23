@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiic Tac Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="blocks">
+        <div class="col">
+          <div id="0" class="row" onclick="handleClick(this)"></div>
+          <div id="1" class="row" onclick="handleClick(this)"></div>
+          <div id="2" class="row" onclick="handleClick(this)"></div>
+        </div>
+        <div class="col">
+          <div id="3" class="row" onclick="handleClick(this)"></div>
+          <div id="4" class="row" onclick="handleClick(this)"></div>
+          <div id="5" class="row" onclick="handleClick(this)"></div>
+        </div>
+        <div class="col">
+          <div id="6" class="row" onclick="handleClick(this)"></div>
+          <div id="7" class="row" onclick="handleClick(this)"></div>
+          <div id="8" class="row" onclick="handleClick(this)"></div>
+        </div>
+      </div>
+      <p id="showWinner"></p>
+
+      <button id="reset">Reset</button>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

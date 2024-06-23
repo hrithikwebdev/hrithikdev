@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(slateblue,purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.container .music-palyer {
+  width: 300px;
+  text-align: center;
+  background: linear-gradient(145deg, #ff0044, #e6003a);
+  padding: 20px;
+  border-radius: 40px;
+  /* box-shadow: 5px 5px 10px #66001a, -5px -5px 10px #ff0066; */
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  padding: 10px 8px;
+  justify-content: space-between;
+}
+
+.navbar .circle {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  border-radius: 50%;
+  color: #fff;
+  background: linear-gradient(145deg, #ff0044, #e6003a);
+  box-shadow: 4px 4px 10px #8f0124, -4px -4px 10px #db0033;
+  cursor: pointer;
+}
+
+.navbar .circle:active{
+  box-shadow: inset 3px 3px 10px #66001a,inset -3px -3px 10px #ff0066;
+}
+
+.song-img {
+  width: 190px;
+  border-radius: 100%;
+  border: 10px solid #fff;
+}
+
+h1 {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+p {
+  color: #ffffffdd;
+  font-size: 13px;
+}
+
+#progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 30px 0px 0px 0px;
+  outline: none;
+}
+
+#progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  outline: none;
+  background: #1a0577;
+  border: 5px solid #fff;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 5px #86868680;
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.controls div {
+  width: 50px;
+  height: 50px;
+  margin: 20px 0;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #ff0044, #e6003a);
+  box-shadow: 5px 5px 10px #66001a, -5px -5px 10px #ff0066;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.controls div:active{
+  background: linear-gradient(145deg, #fe4174, #961233);
+}
+
+.controls div:nth-child(2) {
+  transform: scale(1.4);
+  color: #ff0044;
+  background: #fff;
+}
+
+.controls div:active:nth-child(2){
+  background: #fe4174;
+  color: #fff;
+}
+
+.rotate {
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.song-timer {
+  color: #fff;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  margin: 3px 0 15px 0;
+}
+
+.song-timer span{
+  font-size: 12px;
+}
+
+@media(max-width: 568px) {
+  .container .music-palyer {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    border-radius: 0px;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+  
+  .navbar .circle {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+  .song-img{
+    width: 280px;
+  }
+}

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=
+    , initial-scale=1.0" />
+  <title>www.hrithikdev/portfolio.com</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body id="home">
+  <div class="cursor"></div>
+  <div class="scroll-up-btn">
+    <a href="#home" class="fas fa-angle-up"></a>
+  </div>
+  <div class="navbar">
+    <div class="logo">
+      <h1>Portfo<color>lio</color>
+      </h1>
+    </div>
+    <ul class="menu-list">
+      <li></li>
+      <li><a href="#" data-active="home">Home</a></li>
+      <li><a href="#about" data-active="about">About</a></li>
+      <li><a href="#service" data-active="services">Services</a></li>
+      <li><a href="#project" data-active="projects">Projects</a></li>
+      <li><a href="#skills" data-active="skills">Skills</a></li>
+      <li><a href="#contact" data-active="contact">Contact</a></li>
+      <li></li>
+    </ul>
+    <div id="menu" class="nav-icon" onclick="openMenu()">
+      <span class="line1"></span>
+      <span class="line2"></span>
+      <span class="line3"></span>
+    </div>
+  </div>
+
+  <div class="hero-section" id="home">
+    <div class="left-content">
+      <div class="intro">
+        <p>Hello, my name is</p>
+      </div>
+      <h1>Hrithik Roshan</h1>
+      <div class="text">And i'm a<span class="typing"></span></div>
+      <div class="btns">
+        <button class="btn">Contact Me</button>
+      </div>
+    </div>
+    <div class="right-col">
+      <div class="img-bg"></div>
+      <img src="images/profile.png" />
+    </div>
+  </div>
+
+  <section class="about-section" id="about">
+    <div class="about-title">
+      <h1>About me</h1>
+      <p>Who i am</p>
+    </div>
+
+    <div class="left-column">
+      <img src="images/img-1.jpeg" />
+    </div>
+
+    <div class="right-column">
+      <h4>i'm Hrithik Roshan and i'm a <span class="typed"></span></h4>
+      <p>
+        i'm a UI & UX Designer and also a web developer sit amet consectetur,
+        adipisicing elit. Praesentium accusantium quibusdam, hic beatae
+        officiis vitae non fugiat animi quasi autem! Lorem ipsum dolor sit
+        amet consectetur, adipisicing elit. officiis vitae non fugiat animi
+        quasi autem! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+      <button class="btn btn-2"><a href="resume/Curriculum Vitae.pdf" download
+          style="text-decoration: none; color: #0f0; display: flex; align-items: center; justify-content: center;"><ion-icon
+            name="cloud-download-outline" style="margin-right: 10px;"></ion-icon>Download CV</a></button>
+    </div>
+  </section>
+
+  <section class="services2-section" id="service">
+    <div class="service-title">
+      <h1>Services</h1>
+      <p>That I Provide</p>
+    </div>
+
+    <div class="card-img">
+      <div class="services2_card">
+        <div class="col-right-post">
+          <img src="images/code.png" class="image" width="90px" />
+          <div class="contact-card">
+            <h2>Web Development</h2>
+            <p>
+              lorem inno quisque sodales inno the varius vestibulum drana
+              tortor missa esturpis borttiton tellus enis.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="services2_card">
+        <div class="col-right-post">
+          <img src="images/logo-design.png" class="image" width="90px" />
+          <div class="contact-card">
+            <h2>Graphic Design</h2>
+            <p>
+              lorem ravida surna eveti semen the conse tusio anivite dianne
+              one nivam acestion vue artin dictum.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="services2_card">
+        <div class="col-right-post">
+          <img src="images/msoffice.svg" class="image" width="130px" />
+          <div class="contact-card">
+            <h2>MS Office</h2>
+            <p>
+              lorem ravida surna eveti semen the conse tusio anivite dianne
+              one nivam acestion vue artin dictum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- project section  -->
+
+  <div class="project-heading" id="project">
+    <h1>Project</h1>
+    <p>How can i Design</p>
+  </div>
+
+  <section class="project-section">
+    <div class="project-gallery">
+      <div class="project-card">
+        <div class="project-nav">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="share-social"></ion-icon>
+        </div>
+        <h1>Scroll Animated Portfolio</h1>
+        <div class="project-img">
+          <a href="projects/Animated_Portfolio/index.html" target="_blank">
+            <img src="images/portfolio.png" />
+          </a>
+        </div>
+        <div class="project-desc">
+          <p>
+            Scroll Animated Portfolio to much animations Using HTML / CSS &
+            JavaScript Lorem
+          </p>
+        </div>
+        <div class="project-btn">
+          <a href="projects/Animated_Portfolio/index.html" target="_blank">Explore</a>
+          <ion-icon name="chevron-forward-outline" id="chevron"></ion-icon>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-nav">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="share-social"></ion-icon>
+        </div>
+        <h1>Amazon</h1>
+        <div class="project-img">
+          <a href="projects/Amazon_Clone/index.html" target="_blank">
+            <img src="images/amazon.png" />
+          </a>
+        </div>
+        <div class="project-desc">
+          <p>
+            Amazon Clone Using HTML / CSS & JavaScript Lorem, ipsum dolor
+            adipisicing elit. Doloribus, illum!
+          </p>
+        </div>
+        <div class="project-btn">
+          <a href="projects/Amazon_Clone/index.html" target="_blank">Explore</a>
+          <ion-icon name="chevron-forward-outline" id="chevron"></ion-icon>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-nav">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="share-social"></ion-icon>
+        </div>
+        <h1>Netflix</h1>
+        <div class="project-img">
+          <a href="projects/netflix clone/index.html" target="_blank">
+            <img src="images/netflix.png" />
+          </a>
+        </div>
+        <div class="project-desc">
+          <p>
+            Netflix Clone Using HTML / CSS & JavaScript Lorem, ipsum elit.
+            Doloribus, illum!
+          </p>
+        </div>
+        <div class="project-btn">
+          <a href="projects/netflix clone/index.html" target="_blank">
+            Explore
+          </a>
+          <ion-icon name="chevron-forward-outline" id="chevron"></ion-icon>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-nav">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="share-social"></ion-icon>
+        </div>
+        <h1>Cycle Shop</h1>
+        <div class="project-img">
+          <a href="projects/cycle_store_html_css/index.html" target="_blank">
+            <img src="images/cycle-shop.png" />
+          </a>
+        </div>
+        <div class="project-desc">
+          <p>
+            Cycle Shop Clone Using HTML / CSS & JavaScript not adipisicing
+            elit. Doloribus, illum!
+          </p>
+        </div>
+        <div class="project-btn">
+          <a href="projects/cycle_store_html_css/index.html" target="_blank">Explore</a>
+          <ion-icon name="chevron-forward-outline" id="chevron"></ion-icon>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-nav">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="share-social"></ion-icon>
+        </div>
+        <h1>Educational</h1>
+        <div class="project-img">
+          <a href="projects/edu/index.html" target="_blank">
+            <img src="images/education.png" />
+          </a>
+        </div>
+        <div class="project-desc">
+          <p>
+            Eduford website Using HTML / CSS & JavaScript Lorem, ipsum dolor
+            adipisicing elit. Doloribus, illum!
+          </p>
+        </div>
+        <div class="project-btn">
+          <a href="projects/edu/index.html" target="_blank">Explore</a>
+          <ion-icon name="chevron-forward-outline" id="chevron"></ion-icon>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-nav">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="share-social"></ion-icon>
+        </div>
+        <h1>Calculator</h1>
+        <div class="project-img">
+          <a href="projects/Tic_tac_toe/index.html" target="_blank">
+            <img src="images/tictactoe.png" />
+          </a>
+        </div>
+        <div class="project-desc">
+          <p>
+            ios calculator Using HTML / CSS & JavaScript Lorem, ipsum dolor
+            sit amet consectetur!
+          </p>
+        </div>
+        <div class="project-btn">
+          <a href="projects/Tic_tac_toe/index.html" target="_blank">Explore</a>
+          <ion-icon name="chevron-forward-outline" id="chevron"></ion-icon>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-nav">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="share-social"></ion-icon>
+        </div>
+        <h1>Music Player</h1>
+        <div class="project-img">
+          <a href="projects/Music_player/index.html" target="_blank">
+            <img src="images/musicplayer.png" />
+          </a>
+        </div>
+        <div class="project-desc">
+          <p>
+            Music Player UI design With Working Using HTML / CSS & JavaScript
+            Lorem, ipsum dolor sit amet
+          </p>
+        </div>
+        <div class="project-btn">
+          <a href="projects/Music_player/index.html" target="_blank">Explore</a>
+          <ion-icon name="chevron-forward-outline" id="chevron"></ion-icon>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-nav">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="share-social"></ion-icon>
+        </div>
+        <h1>Makeup Artist</h1>
+        <div class="project-img">
+          <a href="projects/MakeupArtist/index.html" target="_blank">
+            <img src="images/makeupartist.png" />
+          </a>
+        </div>
+        <div class="project-desc">
+          <p>
+            Makeup Artist website design credit noda makeup Using HTML / CSS &
+            JavaScript Lorem, sit amet
+          </p>
+        </div>
+        <div class="project-btn">
+          <a href="projects/MakeupArtist/index.html" target="_blank">Explore</a>
+          <ion-icon name="chevron-forward-outline" id="chevron"></ion-icon>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-nav">
+          <ion-icon name="heart-outline"></ion-icon>
+          <ion-icon name="share-social"></ion-icon>
+        </div>
+        <h1>Text to speech</h1>
+        <div class="project-img">
+          <a href="projects/Text_to_speech/index.html" target="_blank">
+            <img src="images/text.png" />
+          </a>
+        </div>
+        <div class="project-desc">
+          <p>
+            Text to speech with all voices project Using HTML / CSS &
+            JavaScript Lorem, sit amet
+          </p>
+        </div>
+        <div class="project-btn">
+          <a href="projects/Text_to_speech/index.html" target="_blank">Explore</a>
+          <ion-icon name="chevron-forward-outline" id="chevron"></ion-icon>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="skills-section" id="skills">
+    <div class="project-heading" style="margin-top: 20px;">
+      <h1>Skills</h1>
+      <p>What i know</p>
+    </div>
+    <div class="max-width">
+      <h2 class="title">My skills</h2>
+      <div class="skills-content">
+        <div class="column left" d>
+          <div class="text">My creative skills & experiences.</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos, ratione error est recusandae consequatur, iusto illum
+            deleniti quidem impedit, quos quaerat quis minima sequi.
+            Cupiditate recusandae laudantium esse, harum animi aspernatur
+            quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem
+            illum. Ad delectus natus aut hic explicabo minus quod.
+          </p>
+          <a href="#">Read more</a>
+        </div>
+        <div class="column right">
+          <div class="bars">
+            <div class="info">
+              <span>HTML</span>
+              <span id="number"></span>
+            </div>
+            <div class="line">
+              <div class="html" data-progress="95"></div>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>CSS</span>
+              <span id="number-1">98.99%</span>
+            </div>
+            <div class="line">
+              <div class="css"></div>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>JavaScript</span>
+              <span id="number-2">80.99%</span>
+            </div>
+            <div class="line">
+              <div class="js"></div>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>React JS</span>
+              <span id="number-3">50.98%</span>
+            </div>
+            <div class="line">
+              <div class="react"></div>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>Python</span>
+              <span id="number-4">45.99%</span>
+            </div>
+            <div class="line">
+              <div class="python"></div>
+            </div>
+          </div>
+          <div class="bars">
+            <div class="info">
+              <span>MySQL</span>
+              <span id="number-5">35.87%</span>
+            </div>
+            <div class="line">
+              <div class="mysql"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- contact section start -->
+  <section class="contact" id="contact">
+    <div class="project-heading">
+      <h1>Contact me</h1>
+      <p>Get in Touch</p>
+    </div>
+    <div class="max-width">
+      <div class="contact-content">
+        <div class="column left">
+          <div class="text">Get in Touch</div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dignissimos harum corporis fuga corrupti. Doloribus quis soluta
+            nesciunt veritatis vitae nobis?
+          </p>
+          <div class="icons">
+            <div class="row">
+              <i class="fas fa-user"></i>
+              <div class="info">
+                <div class="head">Name</div>
+                <div class="sub-title">Hrithik Roshan</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="info">
+                <div class="head">Address</div>
+                <div class="sub-title">Kapashera, New-Delhi</div>
+              </div>
+            </div>
+            <div class="row">
+              <i class="fas fa-envelope"></i>
+              <div class="info">
+                <div class="head">Email</div>
+                <div class="sub-title">Hr746399@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column right">
+          <div class="text">Message me</div>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="66be2142-7e67-4d97-8e68-1109bcfa0664">
+            <div class="fields">
+              <div class="field name">
+                <input type="name" name="name" placeholder="Name" required />
+              </div>
+              <div class="field email">
+                <input type="email" name="email" placeholder="email" required />
+              </div>
+            </div>
+            <div class="field">
+              <input type="text" name="subject" placeholder="Subject" required />
+            </div>
+            <div class="field textarea">
+              <textarea cols="30" rows="10" name="message" placeholder="Message.." required></textarea>
+            </div>
+            <div class="button-area">
+              <button type="submit">Send message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section start -->
+  <footer>
+    <span>Created By <a href="#">Hrithik Roshan</a> |
+      <span class="far fa-copyright"></span> 2024 All rights reserved.</span>
+  </footer>
+  <!-- javascript files -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+    integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-tween/5.5.11/Tween.min.js"
+    integrity="sha512-vQGarc88W49gCo05JfNhaRTYq0cXfIWYLpNd9fYbDSUOFvjU8rlMxkepx8JJ2fLh7S3Lrr5P4oFAcimS06z4nA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="scrollanimation.js"></script>
+
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1000,
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player || Javascript</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-palyer">
+        <nav class="navbar">
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+
+        <img src="./images/safari.jpg" class="song-img" />
+        <h1 class="musicName">Safari</h1>
+        <p class="singer">Ft. Serena</p>
+
+        <audio id="song">
+          <source src="" type="audio/mp3" />
+        </audio>
+        <input type="range" id="progress" />
+        <div class="song-timer">
+          <span class="current-time">0:00</span>
+          <span class="max-duration">0:00</span>
+        </div>
+        <div class="controls">
+          <div onclick="backMusic()">
+            <i class="fa-solid fa-backward" class="backMusic"></i>
+          </div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="controlBtn"></i>
+          </div>
+          <div onclick="forwardMusic()">
+            <i class="fa-solid fa-forward" class="nextMusic"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>
