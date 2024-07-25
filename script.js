@@ -93,7 +93,7 @@ setInterval(() => {
 }, 30);
 
 setInterval(() => {
-  if (count5 == 35) {
+  if (count5 == 80) {
     clearInterval();
   } else {
     count5 += 1;

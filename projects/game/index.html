@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funny Game with Crush</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        margin: 5px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+      }
+
+      #target {
+        position: absolute;
+        background-color: blue;
+        border: none;
+        width: 90px;
+        height: 40px;
+        margin-top: 30px;
+        border-radius: 10px;
+        cursor: pointer;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        transition: top 0.5s, left 0.5s;
+      }
+      #accept-btn{
+        width: 90px;
+        height: 40px;
+        background-color: red;
+        border-radius: 10px;
+        margin-right: 70px;
+        margin-top: 30px;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="center">
+        <h1>Do You Love Me❤️?</h1>
+        <button id="accept-btn">Yes</button>
+        <button id="target">No</button>
+      </div>
+    </div>
+
+    <script>
+      const target = document.getElementById("target");
+      const accept = document.getElementById('accept-btn');
+
+      accept.addEventListener('click', () => {
+        window.alert('Thank You So Much💕❤️ I Love You Too❤️💕')
+      });
+
+
+      function moveTarget() {
+        const maxWidth = 80;
+        const maxHeight = 80;
+
+        const randomX = Math.floor(Math.random() * maxWidth);
+        const randomY = Math.floor(Math.random() * maxHeight);
+
+        target.style.left = randomX + "%";
+        target.style.top = randomY + "vh";
+      }
+
+      target.addEventListener("mouseenter", moveTarget);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+/* cursor effects  */
+
+.cursor-outline{
+    position: fixed;
+    width: 6rem;
+    height: 6rem;
+    border: 1px solid rgb(255, 153, 161);
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999;
+}
+.cursor {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+    background: pink;
+    z-index: 999;
+    animation: scale-up 0.6s;
+}
+
+@keyframes scale-up {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%,-50%) scale(1);
+        opacity: 0;
+    }
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.box {
+    width: 620px;
+    height: 580px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 15px;
+    
+}
+.box img {
+    width: 630px;
+    position: absolute;
+    top: 4%;
+}
+
+
+.text {
+    position: absolute;
+    top: 4.80%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    overflow: hidden;
+}
+.text p{
+    font-size: 110px;
+    font-weight: 700;
+}
+
+
+.title {
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #000;
+    padding: 4px 10px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.title p {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fbc7c8;
+}
+
+.btn {
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3.7px solid #000;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .6s;
+    letter-spacing: 3px;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+}
+
+.social-media {
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    display: flex;
+    gap: 1.5rem;
+    color: #444;
+}
+.social-media ion-icon {
+    cursor: pointer;
+    transition: .6s;
+    scale: 1.3;
+}
+
+.social-media ion-icon:hover {
+    scale: 1.5;
+}
+
+.animate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+    transition: .6s ease-out;
+}
+
+/* navbar css  */
+
+.navbar-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100vh;
+    background: #ffffff5e;
+    backdrop-filter: blur(15px);
+    z-index: 998;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    scale: 0;
+    opacity: 0;
+    transition: all .6s ease-in-out;
+}
+
+.active.navbar-overlay {
+    visibility: visible;
+    scale: 1;
+    opacity: 1;
+}
+
+
+.navbar-overlay nav .menu-list {
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navbar-overlay nav .menu-list li {
+    font-size: 80px;
+    text-transform: uppercase;
+    transition: all .6s;
+}
+
+.navbar-overlay nav .menu-list li:hover{
+    letter-spacing: 5px;
+    transform: scaleX(1.4);
+}
+.navbar-overlay nav .menu-list li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+#backBtn {
+    font-size: 30px;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-family: "Bebas Neue", sans-serif;
+    transition: all .5s;
+
+}
+
+#backBtn:hover {
+    letter-spacing: 5px;
+    transform: scaleX(1.4);
+    text-decoration: line-through;
+}
+
+
+
+
