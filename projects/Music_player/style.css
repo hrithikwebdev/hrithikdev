@@ -24,6 +24,8 @@
   background: linear-gradient(145deg, #ff0044, #e6003a);
   padding: 20px;
   border-radius: 40px;
+  position: relative;
+  overflow: hidden;
   /* box-shadow: 5px 5px 10px #66001a, -5px -5px 10px #ff0066; */
 }
 
@@ -51,7 +53,6 @@
 .navbar .circle:active {
   box-shadow: inset 3px 3px 10px #66001a, inset -3px -3px 10px #ff0066;
 }
-
 .song-img {
   width: 190px;
   border-radius: 100%;
@@ -149,6 +150,98 @@ p {
 
 .song-timer span {
   font-size: 12px;
+}
+
+.playlist-navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(145deg, #ff0044e9, #e6003ae7);
+  z-index: 11;
+}
+
+.playlist {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: linear-gradient(145deg, #ff0044e9, #e6003ae7);
+  top: 0;
+  left: 0;
+  color: #fff;
+  transform: translateX(100%);
+  transition: all 0.5s;
+  overflow-y: scroll;
+}
+
+.playlist::-webkit-scrollbar {
+  display: none;
+}
+
+.playlist.active {
+  transform: translateX(0);
+}
+
+.playlist h2 {
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 2px solid rgb(218, 218, 218);
+}
+
+.playlist #close {
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  font-size: 20px;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.playlist .main-playlist {
+  width: 100%;
+  padding: 0 0 10px 0;
+}
+
+.playlist .main-playlist .playlistSong {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 5px 0 5px 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.playlist .main-playlist .playlistSong .playing {
+  font-size: 12px;
+  position: absolute;
+  right: 20px;
+  color: rgb(214, 214, 214);
+  display: none;
+}
+/* .playlistSong .playing.play {
+  display: block;
+} */
+
+.playlist .main-playlist .playlistSong:hover {
+  background: #db0033;
+}
+.playlist .main-playlist .playlistSong img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.playlist .main-playlist .playlistSong .song-details h1 {
+  font-size: 14px;
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: 10px;
+}
+
+.playlist .main-playlist .playlistSong .song-details p {
+  font-size: 10px;
+  text-align: left;
+  margin-left: 10px;
 }
 
 @media (max-width: 568px) {

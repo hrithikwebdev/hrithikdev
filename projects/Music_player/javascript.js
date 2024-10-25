@@ -240,9 +240,10 @@ const forwardMusic = () => {
   if (musicIndex > music.length - 1) {
     musicIndex = 0;
     controlBtn.classList.add("fa-pause");
+    controlBtn.classList.add("fa-play");
   }
   loadMusic(musicIndex);
-  controlBtn.classList.add("fa-play");
+  controlBtn.classList.add("fa-pause");
   song.play();
 };
 
@@ -251,3 +252,29 @@ song.addEventListener("ended", () => {
   song.play();
   controlBtn.classList.add("fa-pause");
 });
+
+// playlist started here
+
+document.getElementById("menu-bar").addEventListener("click", () => {
+  document.querySelector(".playlist").classList.add("active");
+  document.getElementById("close").addEventListener("click", () => {
+    document.querySelector(".playlist").classList.remove("active");
+  });
+});
+
+let playlistSong = document.querySelectorAll(".playlistSong");
+let playing = document.querySelectorAll("playing");
+
+playlistSong.forEach((song, musicIndex) => {
+  song.addEventListener("click", () => {
+    loadMusic(musicIndex);
+    playPause();
+  });
+});
+
+// playing.forEach((musicIndex) => {
+//   song.addEventListener("click", () => {
+//     loadMusic(musicIndex);
+//     playing.classList.add("play");
+//   });
+// });
