@@ -263,7 +263,7 @@ document.getElementById("menu-bar").addEventListener("click", () => {
 });
 
 let playlistSong = document.querySelectorAll(".playlistSong");
-let playing = document.querySelectorAll("playing");
+let playing = document.querySelectorAll(".playing");
 
 playlistSong.forEach((song, musicIndex) => {
   song.addEventListener("click", () => {
@@ -271,10 +271,3 @@ playlistSong.forEach((song, musicIndex) => {
     playPause();
   });
 });
-
-// playing.forEach((musicIndex) => {
-//   song.addEventListener("click", () => {
-//     loadMusic(musicIndex);
-//     playing.classList.add("play");
-//   });
-// });
