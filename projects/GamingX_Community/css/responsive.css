@@ -1,0 +1,561 @@
+@media only screen and (max-width: 1200px) {
+  .game-collection {
+    padding: 0 5%;
+  }
+  .about-us {
+    padding: 0 5%;
+  }
+
+  .wrapper .carousel {
+    width: 580px;
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    min-height: 100vh;
+    overflow-y: hidden;
+  }
+  .hero-section .left-col {
+    width: 100%;
+  }
+
+  .hero-section .right-col {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-section .right-col p {
+    width: 100%;
+  }
+
+  .hero-section .right-col .prevNext-Btn {
+    display: none;
+  }
+
+  .social-icons {
+    display: none;
+  }
+
+  .hero-section .left-col .play-btn {
+    display: none;
+  }
+  .hero-section .left-col {
+    top: 10%;
+    left: 20%;
+  }
+  .hero-section .left-col::before {
+    top: 25%;
+    left: 5%;
+    width: 370px;
+    height: 370px;
+  }
+
+  .hero-section .left-col::after {
+    left: 5%;
+  }
+  .hero-section .left-col img {
+    width: 390px;
+  }
+  .mobile-navbar .menu {
+    flex-direction: column;
+    row-gap: 0.5rem;
+    text-align: center;
+  }
+
+  .game-collection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 13%;
+  }
+  .game-collection .left-col-collect {
+    width: 100%;
+    min-height: 250px;
+    padding: 30px;
+    background: var(--main-clr);
+    margin: 80px 0;
+  }
+
+  .game-collection .right-col-collect .wrapper .carousel {
+    width: 830px;
+  }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+  }
+
+  .about-right-col {
+    margin-top: 50px;
+  }
+
+  .counter-sec {
+    padding-top: 60px;
+  }
+
+  .matches-section {
+    padding: 0 8%;
+  }
+
+  .prev-matches .prev-match-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .player-card-counter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    .text-div {
+      width: 90%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  }
+
+  .main-banner .banner .left-col {
+    width: 100%;
+  }
+
+  .main-banner .banner .right-col {
+    display: none;
+  }
+
+  .footer-section .footer-content {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .footer-section .footer-content .footer-left-col {
+    width: 100%;
+    min-height: 200px;
+    padding: 40px 0;
+  }
+  .footer-section .footer-content .footer-right-col {
+    width: 100%;
+    min-height: 200px;
+    padding: 80px 0;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero-section .right-col .right-col-content h1 {
+    font-size: 60px;
+  }
+
+  .game-collection {
+    padding: 0 5%;
+  }
+}
+
+/* ================ media query for responsive landing page ================= */
+
+@media only screen and (max-width: 600px) {
+  .container header {
+    padding: 0 5%;
+    position: fixed;
+  }
+
+  .mobile-navbar .icons-cart {
+    display: block;
+  }
+
+  .container header .brand-logo {
+    font-size: 18px;
+  }
+  .container .nav-icons .hide,
+  .container .nav-icons .hide,
+  .container .nav-icons .cart {
+    display: none;
+  }
+
+  .container #home .nav-icons .fa-bars {
+    width: 40px;
+    height: 40px;
+  }
+  .container .cart-section {
+    padding: 0 2%;
+    position: fixed;
+  }
+  .container .cart-section .add-cart {
+    width: 1200px;
+    height: 700px;
+  }
+
+  .cart-section .add-cart .products {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .cart-section .add-cart .products .product-image .delete {
+    left: 24%;
+  }
+  .cart-section .add-cart .title #closeCart {
+    right: 20px;
+    top: 20px;
+  }
+
+  .cart-section .add-cart .cart-btn-div {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .search-popup .searchBox .inputElem {
+    font-size: 20px;
+    height: 40px;
+  }
+
+  .search-popup .searchBox .searchBtn {
+    height: 40px;
+    font-size: 17px;
+  }
+
+  .hero-section {
+    padding: 32% 15% 0 15%;
+  }
+
+  .hero-section .right-col .right-col-content h1 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .hero-section .left-col img {
+    width: 320px;
+    bottom: 6%;
+    right: 10%;
+  }
+
+  .hero-section .left-col::before {
+    top: 20%;
+    left: -50px;
+    width: 260px;
+    height: 260px;
+  }
+
+  .hero-section .left-col::after {
+    left: 0;
+    display: none;
+  }
+
+  .hero-section .right-col .right-col-content p {
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 15%;
+  }
+
+  .game-collection {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+  }
+
+  .game-collection .left-col-collect .title-txt {
+    font-size: 16px;
+  }
+
+  .game-collection .left-col-collect .collect-title {
+    font-size: 27px;
+  }
+
+  .game-collection .left-col-collect {
+    width: 100%;
+    min-height: 250px;
+    padding: 30px;
+    background: var(--main-clr);
+    margin: 80px 0;
+  }
+  .game-collection .left-col-collect .desc {
+    font-size: 16px;
+  }
+
+  .game-collection .left-col-collect .collection-btn {
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .game-collection .right-col-collect .wrapper .carousel {
+    width: 290px;
+  }
+
+  .about-us {
+    padding: 0 5%;
+    text-align: center;
+  }
+
+  .about-us .about-title {
+    font-size: 70px;
+  }
+
+  .about-us .about-title::after {
+    left: 110px;
+  }
+
+  .about-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .about-us .about-container .about-img img {
+    width: 300px;
+  }
+
+  .about-us .about-container .about-img .about-img-box {
+    width: 100px;
+    height: 100px;
+    bottom: 5px;
+  }
+  .about-us .about-container .about-img .about-img-box h1 {
+    font-size: 35px;
+  }
+
+  .about-us .about-container .about-img .about-img-box p {
+    font-size: 14px;
+  }
+
+  .about-us .about-container .about-right-col {
+    padding-left: 4%;
+    text-align: center;
+  }
+
+  .about-us .about-container .about-right-col .about-head {
+    font-size: 20px;
+  }
+
+  .about-us .about-container .about-right-col .about-txt {
+    font-size: 14px;
+  }
+
+  .about-us .about-container .about-right-col .about-desc {
+    font-size: 14px;
+  }
+
+  .about-us .about-container .about-right-col .about-btn {
+    height: 40px;
+    font-size: 15px;
+  }
+  .counter-sec {
+    padding: 10% 3%;
+  }
+  .counter-sec .box-count {
+    width: 100%;
+    margin: 5px;
+  }
+
+  .matches-section {
+    padding: 0;
+    text-align: center;
+  }
+
+  .matches-container .wrapper .carousel .card {
+    width: 300px;
+    height: 300px;
+  }
+
+  .matches-container .wrapper .carousel .card .card-img img {
+    width: 50px;
+  }
+
+  .matches-container .wrapper .carousel .card .text-content .text h4 {
+    font-size: 20px;
+  }
+
+  .matches-container .wrapper .carousel .card p {
+    font-size: 14px;
+  }
+
+  .matches-container .wrapper .carousel .card p::before {
+    right: 40%;
+  }
+
+  .matches-section .match-title {
+    font-size: 70px;
+  }
+  .matches-section .match-title::after {
+    left: 80px;
+  }
+
+  .matches-section .prev-matches .pre-text {
+    letter-spacing: 6px;
+    font-size: 19px;
+  }
+
+  .matches-section .prev-matches .prev-match-container .match-box {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .videos {
+    min-height: 40vh;
+    padding: 0 5%;
+  }
+
+  .videos a {
+    width: 50px;
+    height: 50px;
+    font-size: 17px;
+  }
+
+  .tag-container {
+    padding: 0;
+  }
+
+  .players-section {
+    padding: 0 10px;
+
+    .player-title {
+      text-align: center;
+      font-size: 80px;
+    }
+    .player-title::after {
+      left: 53px;
+    }
+  }
+
+  .player-card-counter {
+    flex-direction: column;
+  }
+
+  .player-card-counter .text-div {
+    width: 100%;
+  }
+
+  .player-card-counter .text-div h1 {
+    font-size: 25px;
+  }
+
+  .player-card-counter .player-count {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .product-section {
+    padding: 0 1%;
+    text-align: center;
+
+    .product-title {
+      font-size: 80px;
+    }
+
+    .product-title::after {
+      left: 45px;
+    }
+  }
+  .product-card .wrapper .carousel .card h2 {
+    font-size: 30px;
+  }
+  .product-card .wrapper .carousel .card img {
+    width: 180px;
+    height: 180px;
+    margin: 20px 0;
+  }
+  .product-card .wrapper .carousel .card .add-cart p {
+    font-size: 19px;
+    margin-bottom: 20px;
+  }
+
+  .main-banner .banner {
+    padding: 0 10px;
+  }
+
+  .main-banner .banner .left-col {
+    flex-direction: column;
+  }
+
+  .main-banner .banner .left-col .banner-text {
+    font-size: 15px;
+    letter-spacing: 3px;
+  }
+
+  .main-banner .banner .left-col .banner-heading {
+    font-size: 25px;
+  }
+
+  .main-banner .banner .left-col .text {
+    font-size: 14px;
+  }
+  .main-banner .banner .left-col .banner-btn {
+    width: 120px;
+    height: 44px;
+    font-size: 16px;
+  }
+
+  .blog-section {
+    padding: 0 1%;
+
+    .blog-title {
+      font-size: 80px;
+      text-align: center;
+    }
+
+    .blog-title::after {
+      left: 85px;
+    }
+  }
+
+  .subs-banner {
+    flex-direction: column;
+    padding: 0 20px;
+
+    .sub-text {
+      font-size: 20px;
+      text-align: center;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .sub-btn {
+      width: 120px;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+
+  .footer-section {
+    padding: 0 6%;
+    .footer-content .footer-left-col {
+      height: 360px;
+      width: 100%;
+      padding: 0;
+    }
+
+    .footer-content .footer-right-col {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+
+      .menu,
+      .links {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  .footer-section .copyright {
+    flex-direction: column;
+    padding: 30px 0;
+    line-height: 30px;
+  }
+
+  .form-container {
+    width: 340px;
+    padding: 15px;
+  }
+  .main-container {
+    width: 400px;
+    background: transparent;
+  }
+
+  .main-container .form-banner {
+    display: none;
+  }
+}

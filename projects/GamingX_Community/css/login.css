@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --orange: #e50914;
+  --dark: #343a40;
+  --main-clr: #191919;
+  --font: "Oswald", sans-serif;
+  --white: #ffff;
+  --gray: #666;
+  --main-bg-clr: #141414;
+  --input-clr: #313131;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 0 5%;
+  background: var(--main-bg-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+.main-container {
+  width: 650px;
+  min-height: 410px;
+  background: var(--main-clr);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.form-banner {
+  width: 280px;
+  height: 350px;
+  background: #1d1d1d;
+  position: absolute;
+  bottom: 30px;
+  right: -60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  text-align: center;
+}
+
+.form-banner h1 {
+  color: var(--white);
+  font-family: var(--font);
+  letter-spacing: 6px;
+  font-size: 30px;
+  span {
+    color: var(--orange);
+  }
+}
+.form-banner p {
+  color: var(--gray);
+  font-family: var(--font);
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.form-banner .icons {
+  color: var(--white);
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 18px;
+}
+
+.form-container {
+  width: 400px;
+  min-height: 380px;
+  background: var(--main-clr);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+
+  form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      font-size: 23px;
+      color: var(--white);
+      font-family: var(--font);
+    }
+
+    .inputElem {
+      width: 100%;
+      height: 45px;
+      margin-top: 20px;
+      padding-left: 20px;
+      border: none;
+      outline: none;
+      background: var(--input-clr);
+      color: var(--white);
+    }
+    .inputElem::placeholder {
+      color: var(--gray);
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    .form-elem {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+
+      .check input[type="checkbox"] {
+        appearance: none;
+        width: 18px;
+        height: 18px;
+        border-radius: 2px;
+        background: var(--white);
+        cursor: pointer;
+      }
+
+      .check input[type="checkbox"]:checked {
+        background-image: url(../images/check.png);
+        background-position: center;
+        background-size: 15px;
+        background-repeat: no-repeat;
+      }
+      .check label {
+        color: var(--white);
+        font-size: 14px;
+        padding-left: 5px;
+      }
+
+      .link-f {
+        text-decoration: none;
+        color: var(--orange);
+        font-size: 14px;
+      }
+    }
+
+    .form-btn {
+      width: 100%;
+      height: 45px;
+      border-radius: 5px;
+      margin-top: 20px;
+      border: none;
+      background: var(--orange);
+      color: var(--white);
+      font-size: 19px;
+      font-family: var(--font);
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    .form-btn:hover {
+      letter-spacing: 2px;
+    }
+
+    .text {
+      margin-top: 20px;
+      font-family: var(--font);
+      font-weight: 300;
+      font-size: 15px;
+      color: var(--gray);
+
+      a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 500;
+        font-family: var(--font);
+        font-size: 15px;
+      }
+    }
+  }
+}
